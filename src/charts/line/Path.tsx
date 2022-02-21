@@ -8,7 +8,7 @@ import useAnimatedPath from './useAnimatedPath';
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 
-export type LineChartPathProps = Animated.AnimateProps<PathProps> & {
+export type LineChartPathProps = Animated.AnimateProps<Partial<PathProps>> & {
   color?: string;
   inactiveColor?: string;
   width?: number;

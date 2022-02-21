@@ -8,7 +8,9 @@ import useAnimatedPath from './useAnimatedPath';
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 
-export type LineChartGradientProps = Animated.AnimateProps<PathProps> & {
+export type LineChartGradientProps = Animated.AnimateProps<
+  Partial<PathProps>
+> & {
   color?: string;
   children?: React.ReactNode;
 };

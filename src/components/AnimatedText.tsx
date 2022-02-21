@@ -10,10 +10,10 @@ import Animated, {
 
 Animated.addWhitelistedNativeProps({ text: true });
 
-interface AnimatedTextProps {
+type AnimatedTextProps = {
   text: Animated.SharedValue<string>;
-  style?: Animated.AnimateProps<RNTextProps>['style'];
-}
+  style?: Animated.AnimateProps<Partial<RNTextProps>>['style'];
+};
 
 const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
 

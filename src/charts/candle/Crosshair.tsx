@@ -24,8 +24,8 @@ type CandlestickChartCrosshairProps = LongPressGestureHandlerProps & {
   color?: string;
   children?: React.ReactNode;
   onCurrentXChange?: (value: number) => unknown;
-  horizontalCrosshairProps?: Animated.AnimateProps<ViewProps>;
-  verticalCrosshairProps?: Animated.AnimateProps<ViewProps>;
+  horizontalCrosshairProps?: Animated.AnimateProps<Partial<ViewProps>>;
+  verticalCrosshairProps?: Animated.AnimateProps<Partial<ViewProps>>;
   lineProps?: Partial<CandlestickChartLineProps>;
 };
 

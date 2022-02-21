@@ -10,7 +10,7 @@ export type LineChartPriceTextProps = {
   format?: TFormatterFn<string>;
   precision?: number;
   variant?: 'formatted' | 'value';
-  style?: Animated.AnimateProps<RNTextProps>['style'];
+  style?: Animated.AnimateProps<Partial<RNTextProps>>['style'];
 };
 
 LineChartPriceText.displayName = 'LineChartPriceText';

@@ -17,8 +17,8 @@ import { useLineChart } from './useLineChart';
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
 export type LineChartDotProps = {
-  dotProps?: Animated.AnimateProps<CircleProps>;
-  outerDotProps?: Animated.AnimateProps<CircleProps>;
+  dotProps?: Animated.AnimateProps<Partial<CircleProps>>;
+  outerDotProps?: Animated.AnimateProps<Partial<CircleProps>>;
   color?: string;
   inactiveColor?: string;
   showInactiveColor?: boolean;

@@ -16,7 +16,7 @@ type LineChartCursorCrosshairProps = Omit<
   color?: string;
   size?: number;
   outerSize?: number;
-  crosshairWrapperProps?: Animated.AnimateProps<ViewProps>;
+  crosshairWrapperProps?: Animated.AnimateProps<Partial<ViewProps>>;
   crosshairProps?: ViewProps;
   crosshairOuterProps?: ViewProps;
 };

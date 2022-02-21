@@ -11,7 +11,7 @@ export type CandlestickChartPriceTextProps = {
   precision?: number;
   variant?: 'formatted' | 'value';
   type?: TPriceType;
-  style?: Animated.AnimateProps<RNTextProps>['style'];
+  style?: Animated.AnimateProps<Partial<RNTextProps>>['style'];
 };
 
 export function CandlestickChartPriceText({

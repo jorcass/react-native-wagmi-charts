@@ -10,7 +10,7 @@ import { getPath } from './utils';
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 
-export type LineChartColorProps = Animated.AnimateProps<PathProps> & {
+export type LineChartColorProps = Animated.AnimateProps<Partial<PathProps>> & {
   color?: string;
   from: number;
   to: number;

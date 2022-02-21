@@ -11,7 +11,7 @@ type CandlestickChartPriceTextProps = {
   options?: { [key: string]: string };
   format?: TFormatterFn<number>;
   variant?: 'formatted' | 'value';
-  style?: Animated.AnimateProps<RNTextProps>['style'];
+  style?: Animated.AnimateProps<Partial<RNTextProps>>['style'];
 };
 
 export function CandlestickChartDatetimeText({

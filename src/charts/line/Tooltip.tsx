@@ -10,7 +10,7 @@ import { CursorContext } from './Cursor';
 import { LineChartPriceText, LineChartPriceTextProps } from './PriceText';
 import { useLineChart } from './useLineChart';
 
-type LineChartTooltipProps = Animated.AnimateProps<ViewProps> & {
+type LineChartTooltipProps = Animated.AnimateProps<Partial<ViewProps>> & {
   children?: React.ReactNode;
   xGutter?: number;
   yGutter?: number;
